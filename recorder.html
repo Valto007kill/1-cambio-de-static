@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabador de Sonido</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.0/lame.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Grabador de Sonido</h1>
+        <button id="startBtn">Iniciar Grabación</button>
+        <button id="stopBtn" disabled>Detener Grabación</button>
+        <div id="recordingTime">00:00</div>
+        <audio id="audioPlayback" controls></audio>
+        <a id="downloadLink" href="#" download="grabacion.mp3">Descargar Grabación</a>
+    </div>
+    <script src="recorder.js"></script>
+</body>
+</html>
